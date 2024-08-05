@@ -13,10 +13,9 @@ class BottomBarWidget extends StatelessWidget {
     return Scaffold(
       body: Row(children: <Widget>[
         Expanded(
-            flex: 1,
+            flex: 100,
             child: InkWell(
               onTap: () {
-                print("Home Button Pushed");
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
                   return const HomePage(title: 'Home Page');
                 }));
@@ -28,10 +27,15 @@ class BottomBarWidget extends StatelessWidget {
                   )),
             )),
         Expanded(
-            flex: 1,
+          flex: 1,
+          child: Container(
+            color: Colors.black,
+          ),
+        ),
+        Expanded(
+            flex: 100,
             child: InkWell(
               onTap: () {
-                print("Settings Button Pushed");
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
                   return const SettingsPage(title: "Settings Page");
                 }));
