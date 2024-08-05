@@ -9,6 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  googleapis: ^9.0.0
+  googleapis_auth: ^1.0.0
 
 dev_dependencies:
   flutter_test:
